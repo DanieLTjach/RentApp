@@ -1,0 +1,11 @@
+{
+  "name": "rent_catalog_service",
+  "version": "0.0.1",
+  "description": "Catalog Service for Rent Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Danylo Tkach",
+  "license": "ISC"
+}

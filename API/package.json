@@ -1,0 +1,15 @@
+{
+  "name": "rent_api",
+  "version": "0.0.1",
+  "description": "API for rent_api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API",
+    "Rent"
+  ],
+  "author": "Danylo Tkach",
+  "license": "ISC"
+}
