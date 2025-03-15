@@ -3,7 +3,7 @@ const db = new sqlite3.Database(`src/db/storage/users.db`);
 
 db.serialize(function(){
    // Создание и заполнение бд 
-   db.run(`
+    db.run(`
         CREATE TABLE IF NOT EXISTS users (
             user_id INTEGER PRIMARY KEY AUTOINCREMENT,
             email TEXT UNIQUE,
@@ -22,6 +22,9 @@ db.serialize(function(){
             user_id INTEGER,
             about_me TEXT,
             img TEXT,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            modified_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            modified_by INTEGER,
             FOREIGN KEY (user_id) REFERENCES users (user_id)
         )
         `)

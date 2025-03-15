@@ -22,7 +22,21 @@ exports.register = async (req, res) => {
 }
 
 exports.login = async (req, res) => {
+    const { login, password } = req.body;
+    try{
+        if( !login || !password){
+            return res.status(400).json({error: "All fields are required"})
+        }
 
+        let result = await db.user_login(login, password);
+    
+        if (result === true){
+            return res.status(200);
+        }
+    }
+    catch(error) {
+        console.log(error);
+    }
 }
 
 exports.edit = async (req, res) => {
