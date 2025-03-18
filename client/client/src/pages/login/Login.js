@@ -7,7 +7,9 @@ class Login extends Component {
         super(props)
         this.state = {
             login: '',
-            password: ''
+            password: '',
+            showPassword: false,
+            loginError: ''
         }
     }
 
@@ -15,10 +17,33 @@ class Login extends Component {
         this.setState({
             [e.target.name]: e.target.value
         })
+
+        if (e.target.name === "login") {
+            const login = e.target.value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            this.setState({
+                loginError: login.includes('@') ? (emailRegex.test(login) ? '' : 'Некорректный email') : ''
+            });
+        }
+    }
+
+    togglePasswordVisibility = () => {
+        this.setState(prevState => ({ showPassword: !prevState.showPassword }));
     }
 
     login = async () => {
         const { login, password } = this.state
+
+        if (!login || !password) {
+            this.setState({ loginError: 'Введите логин и пароль' })
+            return
+        }
+
+        if (this.state.loginError) {
+            this.setState({ loginError: 'Некорректный логин' })
+            return
+        }
 
         try {
             const response = await fetch('http://176.37.99.189:49001/api/users/login', {
@@ -48,12 +73,28 @@ class Login extends Component {
 
                     <span>
                         <label>Username or email</label>
-                        <input name="login" type="text" placeholder="Username or email" value={this.username} onChange={this.handleChange}/>
+                        <input name="login" type="text" placeholder="Username or email" value={this.state.login} onChange={this.handleChange}/>
+                        {this.state.loginError && <p style={{ color: "red" }}>{this.state.loginError}</p>}
                     </span>
 
-                    <span>
+                    <span style={{ position: 'relative' }}>
                         <label>Password</label>
-                        <input name="password" type="password" placeholder="Password" value={this.password} onChange={this.handleChange}/>
+                        <input name="password" type={this.state.showPassword ? "text" : "password"} placeholder="Password" value={this.password} onChange={this.handleChange}/>
+                        <button 
+                            type = "button" 
+                            onClick = {this.togglePasswordVisibility} 
+                            style = {{
+                                position: 'absolute',
+                                top: '50%',
+                                right: '10px',
+                                transform: 'translateY(-50%)',
+                                background: 'none',
+                                border: 'none',
+                                cursor: 'pointer'
+                            }}
+                        > 
+                            {this.state.showPassword ? "👁️" : "👁️‍🗨️"}
+                        </button>
                     </span>
 
                     <button onClick={this.login}>Login</button>

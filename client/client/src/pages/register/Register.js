@@ -7,16 +7,44 @@ class Register extends Component {
         this.state = {
             username: '',
             email: '',
-            password: ''
+            password: '',
+            showPassword: false,
+            emailError: '',
+            loading: false
         }
     }
 
     handleChange = (e) => {
         this.setState({ [e.target.name]: e.target.value });
+
+        if (e.target.name === 'email') {
+            const email = e.target.value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                this.setState({ emailError: 'Invalid email format' });
+            } else {
+                this.setState({ emailError: '' });
+            }
+        }
+    }
+
+    togglePasswordVisibility = () => {
+        this.setState(prevState => ({ showPassword: !prevState.showPassword }));
     }
 
     register = async () => {
         const { username, email, password } = this.state;
+
+        if (!username || !email || !password) {
+            alert('Please fill in all fields');
+            return;
+        }
+
+        if (this.state.emailError) {
+            alert('Please enter a valid email address');
+            return;
+        }
+
         try {
             const response = await fetch('http://176.37.99.189:49001/api/users/register', {
                 method: 'POST',
@@ -53,11 +81,27 @@ class Register extends Component {
                     <span>
                         <label>Email</label>
                         <input name="email" type="email" placeholder="Email" value={this.state.email} onChange={this.handleChange}/>
+                        {this.state.emailError && <p style={{ color : "red"}}> {this.state.emailError} </p>}
                     </span>
 
-                    <span>
+                    <span style={{position: 'relative'}}>
                         <label>Password</label>
-                        <input name="password" type="password" placeholder="Password" value={this.state.password} onChange={this.handleChange}/>
+                        <input name="password" type={this.state.showPassword ? "text" : "password"} placeholder="Password" value={this.state.password} onChange={this.handleChange}/>
+                        <button 
+                            type = "button" 
+                            onClick = {this.togglePasswordVisibility} 
+                            style = {{
+                                position: 'absolute',
+                                top: '50%',
+                                right: '10px',
+                                transform: 'translateY(-50%)',
+                                background: 'none',
+                                border: 'none',
+                                cursor: 'pointer'
+                            }}
+                        > 
+                            {this.state.showPassword ? "👁️" : "👁️‍🗨️"}
+                        </button>
                     </span>
 
                     <button onClick= {this.register}>Register</button>

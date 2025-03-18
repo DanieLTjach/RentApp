@@ -9,6 +9,7 @@ if (!fs.existsSync(logDirectory)) {
     fs.mkdirSync(logDirectory, { recursive: true });
 }
 
+// TODO: add a valid error logger 
 const errorLogger = winston.createLogger({
     level: 'error',
     format: winston.format.json(),

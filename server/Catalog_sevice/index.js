@@ -17,10 +17,6 @@ catalog_service.use(`/api/catalog`, catalog_routes);
 
 console.log("Registered routes:");
 
-catalog_service.post('/test', (req, res) => {
-    res.json({ message: 'Маршрут /test работает!' });
-});
-
 catalog_service._router.stack
     .filter(layer => layer.route) // Оставляем только маршруты
     .forEach(layer => {

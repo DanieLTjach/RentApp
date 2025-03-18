@@ -42,3 +42,5 @@
 ::ffff:91.218.13.249 - - [17/Mar/2025:19:15:29 +0000] "POST /api/users/login HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
 ::ffff:91.218.13.249 - - [17/Mar/2025:19:16:11 +0000] "OPTIONS /api/users/login HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
 ::ffff:91.218.13.249 - - [17/Mar/2025:19:28:56 +0000] "POST /api/users/login HTTP/1.1" - - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
+::1 - - [18/Mar/2025:17:20:51 +0000] "POST /api/user/add HTTP/1.1" 404 152 "-" "PostmanRuntime/7.39.1"
+::1 - - [18/Mar/2025:17:21:34 +0000] "POST /api/users/login HTTP/1.1" 400 35 "-" "PostmanRuntime/7.39.1"

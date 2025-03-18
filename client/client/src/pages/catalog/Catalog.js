@@ -10,7 +10,7 @@ class Catalog extends Component {
             name: '',
             phone: '',
             price: '',
-            about: ''
+            description: ''
         };
     }
 
@@ -21,7 +21,7 @@ class Catalog extends Component {
     }   
 
     addAppartment = async () => {
-        const {name, phone, price, about} = this.state;
+        const {name, phone, price, description} = this.state;
 
         try {   
             const response = await fetch('http://176.37.99.189:49002/api/catalog/add', {
@@ -30,10 +30,13 @@ class Catalog extends Component {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
+                    landlord_number: 1,
+                    landlord_id: 3,
                     name,
                     phone,
                     price,
-                    about
+                    description,
+                    img: 'sdsd'
                 })
             });
 
@@ -66,7 +69,7 @@ class Catalog extends Component {
 
                 <span>
                     <label>About</label>
-                    <input name="about" type="text" value={this.about} onChange={this.handleChange}/>
+                    <input name="description" type="text" value={this.about} onChange={this.handleChange}/>
                 </span>
 
                 <button onClick={this.addAppartment}>Add</button>

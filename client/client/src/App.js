@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="App">
       <Catalog />
-      {/* <Login /> */}
-      {/* <Register /> */}
+      <Login />
+      <Register />
     </div>
   );
 }
