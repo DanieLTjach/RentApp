@@ -1,6 +1,7 @@
-
 import React, { Component } from 'react'
-import './login.css'
+import background from '../../img/background/background.jpg'
+import logo from '../../img/logo/bebo.png'
+import './login.css';
 
 class Login extends Component {
     constructor(props) {
@@ -67,38 +68,59 @@ class Login extends Component {
 
     render() {
         return(
-            <div className="component">
-                <div className="login">
-                    <h1>Login</h1>
+            <div className="wrapper">
+                <main className="page">
+                    <section className="section_background">
+                        <img src={background} alt="background"/>
+                    </section>
+                    <section className='section_login'>
+                        <div className="section_login-logo">
+                            <div className="section_logo-img">
+                                <img src={logo} alt="logo" />
+                            </div>
+                            <h1 className="section_logo-title">RentApp</h1>
+                        </div>
+                        <div className="section_login-form">
+                            <h2 className="login-form_title">Nice to see you again</h2>
+                            <div className="login-form_block">
+                                <form action="post" className="form">
 
-                    <span>
-                        <label>Username or email</label>
-                        <input name="login" type="text" placeholder="Username or email" value={this.state.login} onChange={this.handleChange}/>
-                        {this.state.loginError && <p style={{ color: "red" }}>{this.state.loginError}</p>}
-                    </span>
+                                    <div className="form-block">
+                                        <h3 className="form-block_title">Username or email</h3>
+                                        <input name="login" type="text" className="input-email input-form" placeholder="Username or email" value={this.state.login} onChange={this.handleChange}/>
+                                        {this.state.loginError && <p style={{ color: "red" }}>{this.state.loginError}</p>}
+                                    </div>
 
-                    <span style={{ position: 'relative' }}>
-                        <label>Password</label>
-                        <input name="password" type={this.state.showPassword ? "text" : "password"} placeholder="Password" value={this.password} onChange={this.handleChange}/>
-                        <button 
-                            type = "button" 
-                            onClick = {this.togglePasswordVisibility} 
-                            style = {{
-                                position: 'absolute',
-                                top: '50%',
-                                right: '10px',
-                                transform: 'translateY(-50%)',
-                                background: 'none',
-                                border: 'none',
-                                cursor: 'pointer'
-                            }}
-                        > 
-                            {this.state.showPassword ? "👁️" : "👁️‍🗨️"}
-                        </button>
-                    </span>
+                                    <div className="form-block" style={{ position: 'relative' }}>
+                                        <h3 className="form-block_title">Password</h3>
+                                        <input name="password" type={this.state.showPassword ? "text" : "password"} className="input-password input-form" placeholder="Password" value={this.password} onChange={this.handleChange}/>
+                                        <button 
+                                            type = "button" 
+                                            onClick = {this.togglePasswordVisibility} 
+                                            style = {{
+                                                position: 'absolute',
+                                                top: '50%',
+                                                right: '10px',
+                                                transform: 'translateY(-50%)',
+                                                background: 'none',
+                                                border: 'none',
+                                                cursor: 'pointer'
+                                            }}
+                                        >
+                                            
+                                            {this.state.showPassword ? "👁️" : "👁️‍🗨️"}
+                                        </button>
+                                    </div>
 
-                    <button onClick={this.login}>Login</button>
-                </div>
+                                    <button className="form-button" onClick={this.login}>Sign in</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div className="section_login-sign-up">
+                            <h3 className="login-sign-up_text">Dont have an account? <a href='/'>Sign up now</a></h3>
+                        </div>
+                    </section>
+                </main>
             </div>
         )
     }
