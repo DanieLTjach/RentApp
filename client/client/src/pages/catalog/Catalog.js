@@ -49,30 +49,24 @@ class Catalog extends Component {
 
     render() {
         return (
-            <div>
-                <h1>Catalog</h1>
+            <div className="container">
+                <form className="form">
+                    <h2>Add a New Property</h2>
 
-                <span>
                     <label>Name</label>
-                    <input name="name" type="text" value={this.name} onChange={this.handleChange}/>
-                </span>
+                    <input name="name" type="text" value={this.name} onChange={this.handleChange} required/>
 
-                <span>
                     <label>Phone</label>
-                    <input name="phone" type="text" value={this.phone} onChange={this.handleChange}/>
-                </span>
+                    <input name="phone" type="text" value={this.phone} onChange={this.handleChange} required/>
 
-                <span>
                     <label>Price</label>
-                    <input name="price" type="number" value={this.price} onChange={this.handleChange}/>
-                </span>
+                    <input name="price" type="number" value={this.price} onChange={this.handleChange} required/>
 
-                <span>
                     <label>About</label>
-                    <input name="description" type="text" value={this.about} onChange={this.handleChange}/>
-                </span>
+                    <input name="description" type="text" value={this.about} onChange={this.handleChange} required/>
 
-                <button onClick={this.addAppartment}>Add</button>
+                    <button onClick={this.addAppartment}>Add</button>
+                </form>
             </div>
         );
     }
