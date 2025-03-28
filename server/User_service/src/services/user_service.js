@@ -1,4 +1,3 @@
-const { use } = require(`../controllers/user_routes`);
 const db_manager = require(`../db/db_manager`);
 const db = new db_manager;
 

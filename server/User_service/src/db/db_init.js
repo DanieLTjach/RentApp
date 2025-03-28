@@ -2,7 +2,6 @@ const sqlite3 = require(`sqlite3`).verbose();
 const db = new sqlite3.Database(`src/db/storage/users.db`);
 
 db.serialize(function(){
-   // Создание и заполнение бд 
     db.run(`
         CREATE TABLE IF NOT EXISTS users (
             user_id INTEGER PRIMARY KEY AUTOINCREMENT,
