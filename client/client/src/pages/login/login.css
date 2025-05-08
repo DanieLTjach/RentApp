@@ -4,6 +4,9 @@
     display: flex;
     justify-content: space-between;
 }
+.login-page{
+    flex-direction: row !important;
+}
 
 .section_background img{
     width: 100%;

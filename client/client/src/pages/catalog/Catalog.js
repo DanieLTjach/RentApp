@@ -1,7 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Header from "../../entities/header/Header";
+import Footer from "../../entities/footer/Footer";
+import { Link } from "react-router-dom";
+import cardCollections from '../../assets/cardCollections.js';
 import './catalog.css';
 
-class Catalog extends Component {
+
+class Catalog extends React.Component {
+
 
     constructor(props) {
         super(props);
@@ -18,12 +24,12 @@ class Catalog extends Component {
         this.setState({
             [e.target.name]: e.target.value
         });
-    }   
+    }
 
     addAppartment = async () => {
-        const {name, phone, price, description} = this.state;
+        const { name, phone, price, description } = this.state;
 
-        try {   
+        try {
             const response = await fetch('http://176.37.99.189:49002/api/catalog/add', {
                 method: 'POST',
                 headers: {
@@ -47,26 +53,47 @@ class Catalog extends Component {
         }
     };
 
+
     render() {
         return (
-            <div className="container">
-                <form className="form">
-                    <h2>Add a New Property</h2>
-
-                    <label>Name</label>
-                    <input name="name" type="text" value={this.name} onChange={this.handleChange} required/>
-
-                    <label>Phone</label>
-                    <input name="phone" type="text" value={this.phone} onChange={this.handleChange} required/>
-
-                    <label>Price</label>
-                    <input name="price" type="number" value={this.price} onChange={this.handleChange} required/>
-
-                    <label>About</label>
-                    <input name="description" type="text" value={this.about} onChange={this.handleChange} required/>
-
-                    <button onClick={this.addAppartment}>Add</button>
-                </form>
+            <div className="catalog-page">
+                <Header />
+                <div className="catalog-content">
+                    <h1>Catalog</h1>
+                    <div className="section-collection_cards">
+                        {
+                            cardCollections.map((item, index) => (
+                                <Link to="/product" key={index}>
+                                    <div className="section-collection_card">
+                                        <div className="collection_card-img">
+                                            <img src={item.img} alt="img" />
+                                            <div className="collection_card-img_heart">
+                                                <img src="img/ section5/heart.svg" alt="icon" />
+                                            </div>
+                                        </div>
+                                        <div className="collection_card-content">
+                                            <div className="card-content_title">{item.title}</div>
+                                            <div className="card-content_info">
+                                                <div className="content_info-grade">
+                                                    <div className="content_info-grade_img">
+                                                        <img src="img/ section5/Star.svg" alt="icon" />
+                                                    </div>
+                                                    <div className="content_info-grade_text">{item.grade}</div>
+                                                </div>
+                                                <div className="content_info-line">
+                                                    <img src="img/ section5/Line-vertical.svg" alt="line" />
+                                                </div>
+                                                <div className="content_info-category">{item.category}</div>
+                                            </div>
+                                            <div className="card-content_price">{item.price}</div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            ))
+                        }
+                    </div>
+                </div>
+                <Footer />
             </div>
         );
     }

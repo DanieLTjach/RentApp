@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "morgan": "^1.10.0"
+  },
+  "scripts": {
+    "start": "node ./User_service/index.js && node ./Catalog_service/index.js"
   }
 }

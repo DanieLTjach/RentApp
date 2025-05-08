@@ -1,0 +1,149 @@
+.add-apartment-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+.add-apartment-content:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.add-apartment-content h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.add-apartment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-apartment-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Общие стили для input и textarea */
+.add-apartment-form input,
+.add-apartment-form textarea {
+    padding: 12px 14px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.add-apartment-form input:focus,
+.add-apartment-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+    background-color: #fff;
+}
+
+.add-apartment-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Стили для file input */
+.add-apartment-form input[type="file"] {
+    padding: 8px;
+    font-size: 0.95rem;
+    background-color: #fff;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.add-apartment-form input[type="file"]:hover {
+    border-color: #007bff;
+    background-color: #f0f8ff;
+}
+
+.add-apartment-form button {
+    margin-top: 10px;
+    padding: 14px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.add-apartment-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Мобильная адаптивность */
+@media (max-width: 600px) {
+    .add-apartment-content {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+
+    .add-apartment-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .add-apartment-form {
+        gap: 15px;
+    }
+
+    .add-apartment-form button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+
+/* Прячем стандартный файл-инпут */
+.add-apartment-form input[type="file"] {
+    display: none;
+}
+
+/* Кастомная кнопка */
+.custom-file-upload {
+    display: inline-block;
+    padding: 12px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    font-size: 0.95rem;
+    color: #555;
+    user-select: none;
+}
+
+.custom-file-upload:hover {
+    border-color: #007bff;
+    background-color: #f0f8ff;
+    color: #007bff;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 600px) {
+    .custom-file-upload {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}

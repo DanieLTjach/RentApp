@@ -1,0 +1,15 @@
+[2025-05-08T17:52:26.944Z] ERROR: Ошибка при регистрации admin@gmail.com: SQLITE_CONSTRAINT: UNIQUE constraint failed: users.username
+[2025-05-08T17:53:39.129Z] ERROR: Ошибка при регистрации admin@gmail.com: SQLITE_CONSTRAINT: UNIQUE constraint failed: users.username
+[2025-05-08T17:53:43.180Z] ERROR: Ошибка при регистрации admin@gmail.com: SQLITE_CONSTRAINT: UNIQUE constraint failed: users.username
+[2025-05-08T17:57:45.202Z] ERROR: Ошибка при регистрации test2@gmail.com: SQLITE_CONSTRAINT: UNIQUE constraint failed: users.username
+[2025-05-08T17:58:24.245Z] ERROR: Ошибка при входе test: undefined
+[2025-05-08T17:59:30.904Z] ERROR: Ошибка при входе test: undefined
+[2025-05-08T17:59:46.335Z] ERROR: Ошибка при входе test: undefined
+[2025-05-08T18:00:59.526Z] ERROR: Ошибка при входе test: [object Object]
+[2025-05-08T18:01:22.610Z] ERROR: Ошибка при входе test: undefined
+[2025-05-08T18:01:48.951Z] ERROR: Ошибка при входе test: [object Object]
+[2025-05-08T18:03:54.999Z] ERROR: Ошибка при входе test: [object Object]
+[2025-05-08T18:05:02.970Z] ERROR: Ошибка при входе test: [object Object]
+[2025-05-08T18:05:54.743Z] ERROR: Ошибка при входе test: [object Object]
+[2025-05-08T18:13:27.039Z] ERROR: Ошибка при входе test: ReferenceError: user_id is not defined
+[2025-05-08T18:17:37.134Z] ERROR: Ошибка при входе test: Error: secretOrPrivateKey must have a value

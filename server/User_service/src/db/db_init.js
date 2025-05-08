@@ -6,7 +6,7 @@ db.serialize(function(){
         CREATE TABLE IF NOT EXISTS users (
             user_id INTEGER PRIMARY KEY AUTOINCREMENT,
             email TEXT UNIQUE,
-            username TEXT UNIQUE,
+            username TEXT,
             password_hash TEXT,
             is_admin BOOL DEFAULT false,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,

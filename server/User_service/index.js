@@ -9,16 +9,19 @@ const user_routes = require(`./src/controllers/user_routes`);
 
 user_service.use(requestLogger);
 
-user_service.use((err, req, res, next) => {
-    errorLogger.error(err.message);
-    res.status(500).send(`Internal server error`);
-});
-
 user_service.use(express.json());
 
-user_service.use(cors());
+user_service.use(cors({
+    origin: "http://localhost:3000",
+    credentials: true,
+}));
 
 user_service.use(`/api/users`, user_routes);
+
+user_service.use((err, req, res, next) => {
+    errorLogger.error(err.stack || err.message);
+    res.status(500).send(`Internal server error`);
+});
 
 user_service.listen(config.PORT, () =>{
     console.log(`Service is runnin on ${config.PORT}`);

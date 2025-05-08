@@ -35,24 +35,25 @@ class Register extends Component {
     }
 
     register = async () => {
-        const { username, email, password } = this.state;
-
+        const { username, email, password, emailError } = this.state;
+    
         if (!username || !email || !password) {
             alert('Please fill in all fields');
             return;
         }
-
-        if (this.state.emailError) {
+    
+        if (emailError) {
             alert('Please enter a valid email address');
             return;
         }
-
+    
         try {
-            const response = await fetch('http://176.37.99.189:49001/api/users/register', {
+            const response = await fetch('http://localhost:49001/api/users/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
+                credentials: 'include',
                 body: JSON.stringify({ username, email, password })
             });
     
@@ -62,10 +63,15 @@ class Register extends Component {
     
             const data = await response.json();
             console.log("Response data:", data);
+    
+            window.location.href = '/';  
+    
         } catch (error) {
             console.error('Fetch error:', error);
+            alert('Registration failed. Please try again.');
         }
     }
+    
 
 
 
@@ -73,57 +79,43 @@ class Register extends Component {
         return(
             <div className="wrapper">
 
-                <main className="page"> 
+                <main className="page registr-page"> 
                     <section className="section_background">
-                        <img src={background} alt="background" />
+                        <img src={background} alt="background"/>
                     </section>
 
                     <section className="section_registration">
                         <div className="section_registration-logo">
                             <div className="section_logo-img">
-                                <img src={logo} alt="logo" />
+                                <img src={logo} alt="logo"/>
                             </div>
-                            <h1 className="section_logo-title">RentApp</h1>
+                            <h1 className="section_logo-title">Logo</h1>
                         </div>
 
                         <div className="section_registration-form">
                             <h2 className="registration-form_title">Create your account</h2>
                             <div className="registration-form_block">
-                                <form action="post" className="form">
-
-                                    <div className="form-block">
-                                        <h3 className="form-block_title">Username</h3>
-                                        <input name="username" type="text" class="input-email input-form" placeholder="Username" value={this.state.username} onChange={this.handleChange}/>
-                                    </div>
-
-                                    <div className="form-block">
-                                        <h3 className="form-block_title">Email</h3>
-                                        <input name="email" type="email" class="input-email input-form" placeholder="Email" value={this.state.email} onChange={this.handleChange}/>
-                                        {this.state.emailError && <p style={{ color : "red"}}> {this.state.emailError} </p>}
-                                    </div>
-
-                                    <div className="form-block" style={{position: 'relative'}}>
-                                        <h3 className="form-block_title">Password</h3>
-                                        <input name="password" type={this.state.showPassword ? "text" : "password"} class="input-password input-form" placeholder="Password" value={this.state.password} onChange={this.handleChange}/>
-                                        <button 
-                                            type = "button" 
-                                            onClick = {this.togglePasswordVisibility} 
-                                            style = {{
-                                                position: 'absolute',
-                                                top: '50%',
-                                                right: '10px',
-                                                transform: 'translateY(-50%)',
-                                                background: 'none',
-                                                border: 'none',
-                                                cursor: 'pointer'
-                                            }}
-                                        > 
-                                            {this.state.showPassword ? "👁️" : "👁️‍🗨️"}
-                                        </button>
-                                    </div>
-
-                                    <button className="form-button" onClick= {this.register}>Registration</button>
-                                </form>
+                                <div className="form-block">
+                                    <h3 className="form-block_title">Username</h3>
+                                    <input name="username" type="text" className="input-email input-form" placeholder="Username" value={this.state.username} onChange={this.handleChange}/>
+                                </div>
+                                <div className="form-block">
+                                    <h3 className="form-block_title">Email</h3>
+                                    <input name="email" type="email" className="input-email input-form" placeholder="Email" value={this.state.email} onChange={this.handleChange}/>
+                                    {this.state.emailError && <p style={{ color : "red"}}> {this.state.emailError} </p>}
+                                </div>
+                                <div className="form-block" style={{position: 'relative'}}>
+                                    <h3 className="form-block_title">Password</h3>
+                                    <input name="password" type={this.state.showPassword ? "text" : "password"} className="input-password input-form" placeholder="Password" value={this.state.password} onChange={this.handleChange}/>
+                                    <button
+                                        type = "button" 
+                                        onClick = {this.togglePasswordVisibility} 
+                                        style={{ width: "50px",height:'50px', position: 'absolute', left: '300px', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', cursor: 'pointer' }}
+                                    > 
+                                        {this.state.showPassword ? "👁️" : "👁️‍🗨️"}
+                                    </button>
+                                </div>
+                                <button className="form-button" onClick= {this.register}>Registration</button>
                             </div>
                         </div>
                     </section>

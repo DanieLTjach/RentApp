@@ -47,11 +47,12 @@ class Login extends Component {
         }
 
         try {
-            const response = await fetch('http://176.37.99.189:49001/api/users/login', {
+            const response = await fetch('http://localhost:49001/api/users/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
+                credentials: 'include',
                 body: JSON.stringify({ login, password })
             })
 
@@ -61,6 +62,8 @@ class Login extends Component {
 
             const data = await response.json()
             console.log(data)
+
+            window.location.href = '/';  
         } catch (error) {
             console.log(error)
         }
@@ -69,7 +72,7 @@ class Login extends Component {
     render() {
         return(
             <div className="wrapper">
-                <main className="page">
+                <main className="page login-page">
                     <section className="section_background">
                         <img src={background} alt="background"/>
                     </section>
@@ -78,51 +81,47 @@ class Login extends Component {
                             <div className="section_logo-img">
                                 <img src={logo} alt="logo" />
                             </div>
-                            <h1 className="section_logo-title">RentApp</h1>
+                            <h1 className="section_logo-title">Logo</h1>
                         </div>
                         <div className="section_login-form">
                             <h2 className="login-form_title">Nice to see you again</h2>
                             <div className="login-form_block">
-                                <form action="post" className="form">
-
-                                    <div className="form-block">
-                                        <h3 className="form-block_title">Username or email</h3>
-                                        <input name="login" type="text" className="input-email input-form" placeholder="Username or email" value={this.state.login} onChange={this.handleChange}/>
-                                        {this.state.loginError && <p style={{ color: "red" }}>{this.state.loginError}</p>}
-                                    </div>
-
-                                    <div className="form-block" style={{ position: 'relative' }}>
-                                        <h3 className="form-block_title">Password</h3>
-                                        <input name="password" type={this.state.showPassword ? "text" : "password"} className="input-password input-form" placeholder="Password" value={this.password} onChange={this.handleChange}/>
-                                        <button 
-                                            type = "button" 
-                                            onClick = {this.togglePasswordVisibility} 
-                                            style = {{
-                                                position: 'absolute',
-                                                top: '50%',
-                                                right: '10px',
-                                                transform: 'translateY(-50%)',
-                                                background: 'none',
-                                                border: 'none',
-                                                cursor: 'pointer'
-                                            }}
-                                        >
-                                            
-                                            {this.state.showPassword ? "👁️" : "👁️‍🗨️"}
-                                        </button>
-                                    </div>
-
-                                    <button className="form-button" onClick={this.login}>Sign in</button>
-                                </form>
+                                <div className="form-block">
+                                    <h3 className="form-block_title">Username or email</h3>
+                                    <input name="login" type="text" className="input-email input-form" placeholder="Username or email" value={this.state.login} onChange={this.handleChange}/>
+                                    {this.state.loginError && <p style={{ color: "red" }}>{this.state.loginError}</p>}
+                                </div>
+                                <div className="form-block" style={{ position: 'relative' }}>
+                                    <h3 className="form-block_title">Password</h3>
+                                    <input name="password" type={this.state.showPassword ? "text" : "password"} className="input-password input-form" placeholder="Password" value={this.state.password} onChange={this.handleChange}/>
+                                    <button 
+                                        type = "button" 
+                                        onClick = {this.togglePasswordVisibility} 
+                                        style = {{
+                                            width: '50px',
+                                            height: '50px',
+                                            position: 'absolute',
+                                            top: '50%',
+                                            left: '300px',
+                                            transform: 'translateY(-50%)',
+                                            background: 'none',
+                                            border: 'none',
+                                            cursor: 'pointer'
+                                        }}
+                                    >
+                                        {this.state.showPassword ? "👁️" : "👁️‍🗨️"}
+                                    </button>
+                                </div>
+                                <button className="form-button" onClick={this.login}>Sign in</button>
                             </div>
                         </div>
                         <div className="section_login-sign-up">
-                            <h3 className="login-sign-up_text">Dont have an account? <a href='/'>Sign up now</a></h3>
+                            <h3 className="login-sign-up_text">Dont have an account? <a href='/register'>Sign up now</a></h3>
                         </div>
                     </section>
                 </main>
             </div>
-        )
+        );
     }
 }
 
