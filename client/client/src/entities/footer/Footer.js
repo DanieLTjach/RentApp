@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="footer_container">
             <div className="footer-info">
                 <div className="footer-logo">
-                    <img src="img/img-catalog/footer/Logo.svg" alt="Logo" />
+                    <img src="/img/img-catalog/footer/Logo.svg" alt="Logo" />
                 </div>
                 <div className="footer-info_products">
                     <h3 className="footer-info_title">Listings</h3>
@@ -32,13 +32,13 @@ const Footer = () => {
             <div className="footer_bottom">
                 <div className="footer_icons">
                     <div className="footer-icon">
-                        <img src="img/img-catalog/footer/Facebook.svg" alt="Facebook" />
+                        <img src="/img/img-catalog/footer/Facebook.svg" alt="Facebook" />
                     </div>
                     <div className="footer-icon">
-                        <img src="img/img-catalog/footer/Twitter.svg" alt="Twitter" />
+                        <img src="/img/img-catalog/footer/Twitter.svg" alt="Twitter" />
                     </div>
                     <div className="footer-icon">
-                        <img src="img/img-catalog/footer/Instagram.svg" alt="Instagram" />
+                        <img src="/img/img-catalog/footer/Instagram.svg" alt="Instagram" />
                     </div>
                 </div>
                 <div className="footer_copy">

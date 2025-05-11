@@ -8,6 +8,7 @@ router.post("/add", catalog_service.add);
 router.post("/remove", catalog_service.remove);
 router.post("/get", catalog_service.get);
 router.post("/edit", catalog_service.edit);
+router.post("/get_all", catalog_service.get_all);
 
 
 

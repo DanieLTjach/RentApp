@@ -7,7 +7,7 @@ const user_service = require(`../services/user_service`)
 router.post(`/register`, user_service.register);
 router.post(`/login`, user_service.login);
 router.post(`/edit`, user_service.edit);
-router.get(`/get`, user_service.get);
+router.get(`/get/:id`, user_service.get);
 router.post(`/delete`, user_service.delete);
 
 

@@ -2,17 +2,66 @@ import React, { Component } from 'react';
 import Header from '../../entities/header/Header';
 import Footer from '../../entities/footer/Footer';
 import { Link } from 'react-router-dom';
-import cardCollections from '../../assets/cardCollections.js';
+import getCardCollections from '../../assets/getCardCollections.js';
 import withRouter from "../../withRouter.js";
 import './product.css';
 
 class Product extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            cardCollections: [],
+            currentProduct: null,
+            profile: null
+        };
+    }
+
+    getProfileData = async (landlordId) => {
+        try {
+            const response = await fetch(`http://localhost:49001/api/users/get/${landlordId}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            });
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const data = await response.json();
+            return data;
+        } catch (error) {
+            console.error('Error fetching profile data:', error);
+        }
+    };
+
+
+    async componentDidMount() {
+        const data = await getCardCollections();
+        const { id } = this.props.router.params;
+
+        const currentProduct = data.find(item => item.id.toString() === id);
+        if (!currentProduct) {
+            return;
+        }
+        const profile = await this.getProfileData(currentProduct.id);
+
+        this.setState({ cardCollections: data, currentProduct, profile });
+    }
+
 
     handleRedirectToCatalog = () => {
         this.props.router.navigate('/catalog');
     };
 
     render() {
+
+        const { cardCollections, currentProduct, profile } = this.state;
+
+        if (!currentProduct) {
+            return <div className="loading">Loading product...</div>;
+        }
+
         return (
             <div className="wrapper">
                 <main className="page">
@@ -22,7 +71,7 @@ class Product extends Component {
                     <section id="section1" className="section-main">
                         <div className="section-main_container">
                             <div className="section-main_background">
-                                <img src="img/img-catalog/section1/Background.png" alt="background" />
+                                <img src="/img/img-catalog/section1/Background.png" alt="background" />
                             </div>
                             <div className="section-main_content">
                                 <h2 className="main_content-title">Catalog</h2>
@@ -35,61 +84,38 @@ class Product extends Component {
                         <div className="section-product_container">
                             <div className="section-product_block-img">
                                 <div className="product-image-main">
-                                    <img src="img/img-catalog/section2/image1.png" alt="Main Product Image" />
+                                    <img src={currentProduct.img} alt="Main Product Image" />
                                 </div>
                                 <div className="product-thumbnails">
-                                    <img src="img/img-catalog/section2/image2.png" alt="img" />
-                                    <img src="img/img-catalog/section2/image3.png" alt="img" />
-                                    <img src="img/img-catalog/section2/image4.png" alt="img" />
+                                    <img src={currentProduct.img} alt="img" />
+                                    <img src={currentProduct.img} alt="img" />
+                                    <img src={currentProduct.img} alt="img" />
                                 </div>
                             </div>
                             <div className="product_details">
                                 <div className="product_details_title">
-                                    <h2>Product template</h2>
-                                    <p className="product_details_price">$1,500,000</p>
+                                    <h2>{currentProduct.title}</h2>
+                                    <p className="product_details_price">{currentProduct.price}</p>
                                 </div>
                                 <p className="product_details_description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit nobis, quis atque laudantium fugiat iusto illum asperiores expedita, molestiae inventore perspiciatis accusantium aut enim veritatis eum dolor consectetur sapiente!
+                                    {currentProduct.description}
                                 </p>
-                                <ul className="product_details_ul">
-                                    <li className="product_details_li">Lorem ipsum dolor sit amet,</li>
-                                    <li className="product_details_li">Lorem ipsum dolor sit amet,</li>
-                                    <li className="product_details_li">Lorem ipsum dolor sit amet,</li>
-                                </ul>
                             </div>
                         </div>
                     </section>
 
                     <section id="section3" className="section-person">
                         <div className="section-person_container">
-                            <div className="section-person_menu">
-                                <div className="person_menu-item">Description</div>
-                                <div className="person_menu-item">Details</div>
-                                <div className="person_menu-item">Reviews(0)</div>
-                            </div>
                             <div className="section-person_details">
                                 <div className="person_details-img">
-                                    <img src="img/img-catalog/section3/avatar.png" alt="avatar" />
+                                    <img src="/img/img-catalog/section3/avatar.png" alt="avatar" />
                                 </div>
                                 <div className="person_details-content">
-                                    <div className="details-content_title">James William Anderson</div>
-                                    <div className="details-content_info">
-                                        <div className="content_info-grade">
-                                            <div className="img-star">
-                                                <img src="img/img-catalog/section3/Star.svg" alt="icon" />
-                                            </div>
-                                            <div className="content_info-grade_text content_info-grade-person">4.5</div>
-                                        </div>
-                                        <div className="content_info-line">
-                                            <p className="content_info-line">|</p>
-                                        </div>
-                                        <div className="content_info-year">10 years on the platform</div>
-                                    </div>
+                                    <div className="details-content_title">{profile ? profile.username : 'Загрузка...'}</div>
                                     <div className="details-content_contacts">
                                         <ul className="content_contacts-ul">
-                                            <li className="content_contacts-li">+380956650184</li>
-                                            <li className="content_contacts-li">+380952478401</li>
-                                            <li className="content_contacts-li">james.will@gmail.com</li>
+                                            <li className="content_contacts-li">{currentProduct.phone}</li>
+                                            <li className="content_contacts-li">{profile ? profile.email : 'Загрузка...'}</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -101,30 +127,24 @@ class Product extends Component {
                         <div className="section-collection_container">
                             <div className="section-collection_cards">
                                 {
-                                    cardCollections.map((item, index) => (
-                                        <Link to="/product" key={index}>
+                                    cardCollections
+                                    .filter(item => item.id !== currentProduct.id)
+                                    .map((item, index) => (
+                                        <Link to={`/product/${item.id}`} key={index}>
                                             <div className="section-collection_card">
                                                 <div className="collection_card-img">
                                                     <img src={item.img} alt="img" />
                                                     <div className="collection_card-img_heart">
-                                                        <img src="img/ section5/heart.svg" alt="icon" />
+                                                        <img src="/img/%20section5/heart.svg" alt="icon" />
                                                     </div>
                                                 </div>
                                                 <div className="collection_card-content">
                                                     <div className="card-content_title">{item.title}</div>
-                                                    <div className="card-content_info">
-                                                        <div className="content_info-grade">
-                                                            <div className="content_info-grade_img">
-                                                                <img src="img/ section5/Star.svg" alt="icon" />
-                                                            </div>
-                                                            <div className="content_info-grade_text">{item.grade}</div>
-                                                        </div>
-                                                        <div className="content_info-line">
-                                                            <img src="img/ section5/Line-vertical.svg" alt="line" />
-                                                        </div>
-                                                        <div className="content_info-category">{item.category}</div>
+                                                    <div className="card-content_top-row">
+                                                        <div className="content_info-phone">{item.phone}</div>
+                                                        <div className="card-content_price">{item.price}</div>
                                                     </div>
-                                                    <div className="card-content_price">{item.price}</div>
+                                                    <div className="content_info-description">{item.description}</div>
                                                 </div>
                                             </div>
                                         </Link>

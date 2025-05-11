@@ -92,7 +92,7 @@ exports.edit = async (req, res) => {
 
 // Получение
 exports.get = async (req, res) => {
-    const { user_id } = req.body;
+    const user_id = req.params.id;
 
     logger.info(`Получение данных пользователя: id=${user_id}`);
 

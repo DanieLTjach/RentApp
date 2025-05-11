@@ -220,3 +220,225 @@
 [2025-05-08T18:51:18.534Z] INFO: Попытка регистрации: email=test12345@gmail.com, username=test12345
 [2025-05-08T18:51:18.725Z] INFO: Пользователь зарегистрирован: test12345@gmail.com
 ::1 - - [08/May/2025:18:51:18 +0000] "POST /api/users/register HTTP/1.1" 200 30 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:16:01:46 +0000] "OPTIONS /api/users/login HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T16:01:46.802Z] INFO: Попытка входа: login=test
+[2025-05-11T16:01:46.898Z] INFO: Успешный вход: test
+::1 - - [11/May/2025:16:01:46 +0000] "POST /api/users/login HTTP/1.1" 200 42 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:03:01.478Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:03:01 +0000] "GET /api/users/get HTTP/1.1" 400 35 "-" "PostmanRuntime/7.39.1"
+[2025-05-11T17:03:01.480Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:03:07.232Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:03:07 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:03:07.232Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:03:07.234Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:03:07 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:03:07.234Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:03:12 +0000] "GET /api/users/get/1 HTTP/1.1" 404 154 "-" "PostmanRuntime/7.39.1"
+[2025-05-11T17:03:52.592Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:03:52.593Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:03:52 +0000] "GET /api/users/get/ HTTP/1.1" 200 235 "-" "PostmanRuntime/7.39.1"
+[2025-05-11T17:06:11.235Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:06:11 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:06:11.236Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:06:11 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:06:11.238Z] INFO: Получение данных пользователя: id=undefined
+[2025-05-11T17:06:11.238Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:06:39.221Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:06:39 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:06:39.221Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:06:39.223Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:06:39 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:06:39.223Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:06:47.645Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:06:47 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:06:47.646Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:06:47.648Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:06:47 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:06:47.649Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:08:19 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:08:19 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:08:19.979Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:08:19 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:08:19.979Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:08:19.981Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:08:19 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:08:19.981Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:08:21.486Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:08:21 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:08:21.487Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:08:21 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:08:21.489Z] INFO: Получение данных пользователя: id=undefined
+[2025-05-11T17:08:21.490Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:08:36 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:08:36 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:08:36.313Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:08:36 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:08:36.313Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:08:36.315Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:08:36 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:08:36.315Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:08:56 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:08:56 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:08:56.255Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:08:56 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:08:56.255Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:08:56.257Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:08:56 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:08:56.257Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:09:29 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:09:29 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:09:29.091Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:09:29 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:09:29.091Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:09:29.093Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:09:29 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:09:29.093Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:09:37 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:09:37 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:09:37.603Z] INFO: Получение данных пользователя: id=undefined
+[2025-05-11T17:09:37.603Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:09:37 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:09:37.605Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:09:37 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:09:37.606Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:11:04 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:11:04 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:11:04.551Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:11:04 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:11:04.551Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:11:04.553Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:11:04 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:11:04.553Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:11:41 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:11:41.237Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:11:41 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:11:41.237Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:11:41.239Z] INFO: Получение данных пользователя: id=undefined
+[2025-05-11T17:11:41.239Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:11:41 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:11:45.223Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:11:45 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:11:45.223Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:11:45.224Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:11:45 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:11:45.224Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:12:28 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:12:28 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:12:28.237Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:12:28 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:12:28.238Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:12:28.240Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:12:28 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:12:28.240Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:13:25 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:13:25.808Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:13:25 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:13:25.808Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:13:25.811Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:13:25 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:13:25.812Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:14:44 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:14:44 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:14:44.394Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:14:44 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:14:44.394Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:14:44.396Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:14:44 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:14:44.397Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:14:44.464Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:14:44 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:14:44.465Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:14:44.466Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:14:44 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:14:44.466Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:14:44.501Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:14:44 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:14:44.501Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:14:44.502Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:14:44 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:14:44.502Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:15:46 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:15:46 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:15:46.894Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:15:46 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:15:46.894Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:15:46.896Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:15:46 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:15:46.896Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:15:58 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:15:58 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:15:58.544Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:15:58 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:15:58.544Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:15:58.547Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:15:58 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:15:58.548Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:16:26 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:16:26.555Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:16:26 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:16:26.555Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:16:28.876Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:16:28 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:16:28.876Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:17:20.649Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:17:20.650Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:17:20 +0000] "GET /api/users/get/ HTTP/1.1" 200 235 "-" "PostmanRuntime/7.39.1"
+::1 - - [11/May/2025:17:18:28 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:18:28 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:18:28.237Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:18:28 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:18:28.238Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:18:28.239Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:18:28 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:18:28.239Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:18:40 +0000] "OPTIONS /api/users/get/$%7Bid%7D HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:18:40 +0000] "OPTIONS /api/users/get/$%7Bid%7D HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:18:40 +0000] "GET /api/users/get/$%7Bid%7D HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:18:40 +0000] "GET /api/users/get/$%7Bid%7D HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:19:02 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:19:02 +0000] "OPTIONS /api/users/get HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:19:02.229Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:19:02 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:19:02.229Z] WARN: Получение не удалось — отсутствует user_id
+[2025-05-11T17:19:02.231Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:19:02 +0000] "GET /api/users/get HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:19:02.231Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:20:29 +0000] "OPTIONS /api/users/get/$%7BlandlordId%7D HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:20:29 +0000] "OPTIONS /api/users/get/$%7BlandlordId%7D HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:20:29 +0000] "GET /api/users/get/$%7BlandlordId%7D HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:20:29 +0000] "GET /api/users/get/$%7BlandlordId%7D HTTP/1.1" 404 170 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:20:39 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:20:39 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:20:39 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:20:39 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:20:41 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:20:41 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:21:21 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:21:21 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:21:21 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:21:21 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:21:23 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:21:23 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:22:06 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:22:06 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:22:06 +0000] "POST /api/users/get/undefined HTTP/1.1" 404 163 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:22:06 +0000] "POST /api/users/get/undefined HTTP/1.1" 404 163 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:22:30 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:22:30 +0000] "POST /api/users/get/undefined HTTP/1.1" 404 163 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:22:30 +0000] "POST /api/users/get/undefined HTTP/1.1" 404 163 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:23:35 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:23:35 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:23:35 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:23:35 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:23:51 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:23:51 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:23:51 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:23:51 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 162 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:24:39 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:24:39.215Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:24:39 +0000] "GET /api/users/get/undefined HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:24:39.216Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:24:39 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:24:39.224Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:24:39 +0000] "GET /api/users/get/undefined HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:24:39.224Z] WARN: Получение не удалось — отсутствует user_id

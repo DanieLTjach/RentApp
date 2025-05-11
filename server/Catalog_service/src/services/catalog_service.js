@@ -4,17 +4,18 @@ const db = new db_manager();
 
 // Добавление
 exports.add = async (req, res) => {
-    const { landlord_id, name, description, landlord_number, price, img } = req.body;
+    const { landlord_id, name, description, landlord_number, price } = req.body;
 
     logger.info(`Попытка добавить: ${JSON.stringify(req.body)}`);
 
     try {
-        if (!landlord_number || !landlord_id || !name || !description || !price || !img) {
+        if (!landlord_number || !landlord_id || !name || !description || !price) {
+            console.log("landlord_number", landlord_number, "landlord_id", landlord_id, "name", name, "description", description, "price", price);
             logger.warn(`Добавление не удалось — неполные данные`);
             return res.status(400).send(`Missing required fields`);
         }
 
-        const result = await db.catalog_add(landlord_id, price, description, landlord_number, img);
+        const result = await db.catalog_add(landlord_id, price, description, landlord_number, null);
 
         if (result === true) {
             logger.info(`Успешно добавлен: ${name}`);
@@ -108,4 +109,22 @@ exports.get = async (req, res) => {
         logger.error(`Ошибка при получении id=${catalog_id}: ${error.message}`);
         return res.status(500).send(`Error getting product`);
     }
+};
+
+exports.get_all = async (req, res) => {
+    try{
+        const result = await db.get_all();
+
+        if (result) {
+            logger.info(`Данные получены`);
+            return res.status(200).json(result);
+        } else {
+            logger.warn(`Не найдено`);
+            return res.status(404).send(`Products not found`);
+        }
+    }
+    catch (error) {
+    logger.error(`Ошибка при получении всех продуктов: ${error.message}`);
+    return res.status(500).send(`Error getting all products`);
+}
 };

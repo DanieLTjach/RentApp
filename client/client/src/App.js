@@ -9,12 +9,24 @@ import Profile from './pages/profile/Profile';
 import Header from './entities/header/Header';
 import Footer from './entities/footer/Footer';
 import AddApartment from './pages/addApartment/AddApartment';
-import cardCollections from './assets/cardCollections.js';
+import getCardCollections from './assets/getCardCollections.js';
 
 import './reset.css';
 import './index.css';
 
 class App extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            cardCollections: []
+        };
+    }
+
+    async componentDidMount() {
+        const data = await getCardCollections();
+        this.setState({ cardCollections: data });
+    }
 
   handleRedirectToCatalog = () => {
     this.props.router.navigate('/catalog');
@@ -22,6 +34,7 @@ class App extends Component {
 
 
   render() {
+    const { cardCollections } = this.state;
     const { location } = this.props.router;
     const isMainPage = location.pathname === '/';
 
@@ -132,31 +145,23 @@ class App extends Component {
                   <div className="section-collection_cards">
                     {
                       cardCollections.map((item, index) => (
-                        <Link to="/product" key={index}>
-                          <div className="section-collection_card">
-                            <div className="collection_card-img">
-                              <img src={item.img} alt="img" />
-                              <div className="collection_card-img_heart">
-                                <img src="img/ section5/heart.svg" alt="icon" />
-                              </div>
-                            </div>
-                            <div className="collection_card-content">
-                              <div className="card-content_title">{item.title}</div>
-                              <div className="card-content_info">
-                                <div className="content_info-grade">
-                                  <div className="content_info-grade_img">
-                                    <img src="img/ section5/Star.svg" alt="icon" />
-                                  </div>
-                                  <div className="content_info-grade_text">{item.grade}</div>
+                        <Link to={`/product/${item.id}`} key={index}>
+                            <div className="section-collection_card">
+                                <div className="collection_card-img">
+                                    <img src={item.img} alt="img" />
+                                    <div className="collection_card-img_heart">
+                                        <img src="/img/%20section5/heart.svg" alt="icon" />
+                                    </div>
                                 </div>
-                                <div className="content_info-line">
-                                  <img src="img/ section5/Line-vertical.svg" alt="line" />
+                                <div className="collection_card-content">
+                                    <div className="card-content_title">{item.title}</div>
+                                    <div className="card-content_top-row">
+                                        <div className="content_info-phone">{item.phone}</div>
+                                        <div className="card-content_price">{item.price}</div>
+                                    </div>
+                                    <div className="content_info-description">{item.description}</div>
                                 </div>
-                                <div className="content_info-category">{item.category}</div>
-                              </div>
-                              <div className="card-content_price">{item.price}</div>
                             </div>
-                          </div>
                         </Link>
                       ))
                     }
@@ -169,7 +174,7 @@ class App extends Component {
           )}
 
           <Routes>
-            <Route path="/product" element={<Product />} />
+            <Route path="/product/:id" element={<Product />} />
             <Route path="/addApartment" element={<AddApartment />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/login" element={<Login />} />

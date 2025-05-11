@@ -30,13 +30,13 @@ const Header = () => {
             <div className="header_container">
                 <div className="header_container-logo">
                     <Link to="/">
-                        <img src="img/img-catalog/header/logo.svg" alt="Logo" />
+                        <img src="/img/img-catalog/header/logo.svg" alt="Logo" />
                     </Link>
                 </div>
                 <div className="header-menu_icons">
                     <div className="menu_icons-icon">
                         <img 
-                            src="img/img-catalog/header/Account.svg" 
+                            src="/img/img-catalog/header/Account.svg" 
                             alt="icon"
                             style={{ cursor: 'pointer' }}
                             onClick={handleProfileClick}

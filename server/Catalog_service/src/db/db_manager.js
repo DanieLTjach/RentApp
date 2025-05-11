@@ -111,4 +111,20 @@ module.exports = class db_manager {
         });
     }
 
+    async get_all() {
+        return new Promise((resolve, reject) => {
+            this.#db.all(
+                `SELECT * FROM item_desc`,
+                [],
+                function (err, rows) {
+                    if (err) {
+                        reject(err.message);
+                        return;
+                    }
+                    resolve(rows);
+                }
+            );
+        });
+    }
+
 }
