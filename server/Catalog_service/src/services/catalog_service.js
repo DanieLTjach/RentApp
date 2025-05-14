@@ -15,7 +15,7 @@ exports.add = async (req, res) => {
             return res.status(400).send(`Missing required fields`);
         }
 
-        const result = await db.catalog_add(landlord_id, price, description, landlord_number, null);
+        const result = await db.catalog_add(landlord_id, price, description, landlord_number, null, name);
 
         if (result === true) {
             logger.info(`Успешно добавлен: ${name}`);

@@ -6,11 +6,11 @@ module.exports = class db_manager {
         this.#db = require("./db_init");
     }
 
-    async add_into_catalog(landlord_id, price, about, landlor_number, img, catalogId) {
+    async add_into_catalog(landlord_id, price, about, landlor_number, img, catalogId, name) {
         return new Promise((resolve, reject) => {
             this.#db.run(
-                `INSERT INTO item_desc (catalog_id, price, about, landlord_number, img, modified_by) VALUES (?, ?, ?, ?, ?, ?)`,
-                [catalogId, price, about, landlor_number, img, landlord_id],
+                `INSERT INTO item_desc (catalog_id, price, about, landlord_number, img, modified_by, name) VALUES (?, ?, ?, ?, ?, ?, ?)`,
+                [catalogId, price, about, landlor_number, img, landlord_id, name],
                 function (err) {
                     if (err) {
                         reject(err.message);
@@ -34,7 +34,7 @@ module.exports = class db_manager {
         })
     }
     
-    async catalog_add(landlord_id, price, about, landlor_number, img) {
+    async catalog_add(landlord_id, price, about, landlor_number, img, name) {
         return new Promise((resolve, reject) => {
             this.#db.run(
                 `INSERT INTO catalog (landlord_userid, modified_by) VALUES (?, ?)`,
@@ -50,7 +50,7 @@ module.exports = class db_manager {
                         console.log("New Catalog ID:", catalogId);
     
                         // Ждем, пока товар добавится
-                        await this.add_into_catalog(landlord_id, price, about, landlor_number, img, catalogId);
+                        await this.add_into_catalog(landlord_id, price, about, landlor_number, img, catalogId, name);
                         resolve(true);
                     } catch (error) {
                         reject(error);
@@ -59,6 +59,7 @@ module.exports = class db_manager {
             );
         });
     }
+
 
     async remove(catalog_id) {
         return new Promise((resolve, reject) => {
@@ -114,7 +115,7 @@ module.exports = class db_manager {
     async get_all() {
         return new Promise((resolve, reject) => {
             this.#db.all(
-                `SELECT * FROM item_desc`,
+                `SELECT * FROM catalog c JOIN item_desc i ON c.id = i.catalog_id`,
                 [],
                 function (err, rows) {
                     if (err) {

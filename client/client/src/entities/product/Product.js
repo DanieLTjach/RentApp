@@ -17,9 +17,9 @@ class Product extends Component {
         };
     }
 
-    getProfileData = async (landlordId) => {
+    getProfileData = async (landlord_userid) => {
         try {
-            const response = await fetch(`http://localhost:49001/api/users/get/${landlordId}`, {
+            const response = await fetch(`http://localhost:49001/api/users/get/${landlord_userid}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -44,9 +44,24 @@ class Product extends Component {
         if (!currentProduct) {
             return;
         }
-        const profile = await this.getProfileData(currentProduct.id);
+        const profile = await this.getProfileData(currentProduct.landlord_userid);
 
         this.setState({ cardCollections: data, currentProduct, profile });
+    }
+
+    async componentDidUpdate(prevProps) {
+        const prevId = prevProps.router.params.id;
+        const currentId = this.props.router.params.id;
+
+        if (prevId !== currentId) {
+            const data = await getCardCollections();
+            const currentProduct = data.find(item => item.id.toString() === currentId);
+            if (!currentProduct) {
+                return;
+            }
+            const profile = await this.getProfileData(currentProduct.landlord_userid);
+            this.setState({ cardCollections: data, currentProduct, profile });
+        }
     }
 
 
@@ -128,26 +143,27 @@ class Product extends Component {
                             <div className="section-collection_cards">
                                 {
                                     cardCollections
-                                    .filter(item => item.id !== currentProduct.id)
-                                    .map((item, index) => (
-                                        <Link to={`/product/${item.id}`} key={index}>
-                                            <div className="section-collection_card">
-                                                <div className="collection_card-img">
-                                                    <img src={item.img} alt="img" />
-                                                    <div className="collection_card-img_heart">
-                                                        <img src="/img/%20section5/heart.svg" alt="icon" />
+                                        .slice(0, 4)
+                                        .filter(item => item.id !== currentProduct.id)
+                                        .map((item, index) => (
+                                            <Link to={`/product/${item.id}`} key={index}>
+                                                <div className="section-collection_card">
+                                                    <div className="collection_card-img">
+                                                        <img src={item.img} alt="img" />
+                                                        <div className="collection_card-img_heart">
+                                                            <img src="/img/%20section5/heart.svg" alt="icon" />
+                                                        </div>
+                                                    </div>
+                                                    <div className="collection_card-content">
+                                                        <div className="card-content_title">{item.title}</div>
+                                                        <div className="card-content_top-row">
+                                                            <div className="content_info-phone">{item.phone}</div>
+                                                            <div className="card-content_price">{item.price}</div>
+                                                        </div>
+                                                        <div className="content_info-description">{item.description}</div>
                                                     </div>
                                                 </div>
-                                                <div className="collection_card-content">
-                                                    <div className="card-content_title">{item.title}</div>
-                                                    <div className="card-content_top-row">
-                                                        <div className="content_info-phone">{item.phone}</div>
-                                                        <div className="card-content_price">{item.price}</div>
-                                                    </div>
-                                                    <div className="content_info-description">{item.description}</div>
-                                                </div>
-                                            </div>
-                                        </Link>
+                                            </Link>
                                     ))
                                 }
                             </div>

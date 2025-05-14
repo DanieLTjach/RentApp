@@ -21,6 +21,7 @@ const getCardCollections = async () => {
 
     const transformedData = serverData.map(item => ({
       id: item.id,
+      landlord_userid: item.landlord_userid,
       img: item.image || placeholderImages[Math.floor(Math.random() * placeholderImages.length)],
       title: item.name,
       description: item.about || "No description available",

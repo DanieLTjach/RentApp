@@ -144,7 +144,7 @@ class App extends Component {
                   </div>
                   <div className="section-collection_cards">
                     {
-                      cardCollections.map((item, index) => (
+                      cardCollections.slice(0,6).map((item, index) => (
                         <Link to={`/product/${item.id}`} key={index}>
                             <div className="section-collection_card">
                                 <div className="collection_card-img">

@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from "../../entities/header/Header";
 import Footer from "../../entities/footer/Footer";
+import withRouter from "../../withRouter"
 import Cookies from 'js-cookie';
 import "./addApartment.css";
 
@@ -13,12 +14,14 @@ class AddApartment extends React.Component {
             phone: '',
             price: '',
             description: '',
+            error: '',
         };
     }
 
     handleChange = (e) => {
         this.setState({
-            [e.target.name]: e.target.value
+            [e.target.name]: e.target.value,
+            error: '',
         });
     }
 
@@ -26,10 +29,10 @@ class AddApartment extends React.Component {
         e.preventDefault();
         const { name, phone, price, description } = this.state;
 
-        const landlordIdFromCookie = Cookies.get('user_id'); 
+        const landlordIdFromCookie = Cookies.get('user_id');
 
         if (!landlordIdFromCookie) {
-            console.error("Cookie 'id' not found");
+            console.error("Cookie 'user_id' not found");
             return;
         }
 
@@ -48,12 +51,33 @@ class AddApartment extends React.Component {
                 })
             });
 
-            const data = await response.json();
-            console.log(data);
+            if (response.status === 400) {
+                this.setState({ error: 'Заполните все поля' });
+                return;
+            }
+
+            if (!response.ok) {
+                this.setState({ error: 'Ошибка сервера. Попробуйте позже.' });
+                return;
+            }
+
+            let data = null;
+            const contentType = response.headers.get('Content-Type');
+            if (contentType && contentType.includes('application/json')) {
+                data = await response.json();
+                console.log(data);
+            } else {
+                console.log('Ответ сервера без JSON');
+            }
+
+            this.props.router.navigate('/catalog');
+
         } catch (error) {
             console.error(error);
+            this.setState({ error: 'Произошла ошибка при отправке запроса' });
         }
     };
+
 
     render() {
         return (
@@ -62,6 +86,12 @@ class AddApartment extends React.Component {
                 <div className="add-apartment-content">
                     <h1>Add Apartment</h1>
                     <form className="add-apartment-form" onSubmit={this.addAppartment}>
+                        {this.state.error && (
+                            <div className="error-message" style={{ color: 'red', marginBottom: '1rem' }}>
+                                {this.state.error}
+                            </div>
+                        )}
+
                         <label>Title</label>
                         <input
                             type="text"
@@ -107,4 +137,4 @@ class AddApartment extends React.Component {
     }
 }
 
-export default AddApartment;
+export default withRouter(AddApartment);

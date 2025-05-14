@@ -442,3 +442,651 @@
 [2025-05-11T17:24:39.224Z] INFO: Получение данных пользователя: id=undefined
 ::1 - - [11/May/2025:17:24:39 +0000] "GET /api/users/get/undefined HTTP/1.1" 400 35 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
 [2025-05-11T17:24:39.224Z] WARN: Получение не удалось — отсутствует user_id
+::1 - - [11/May/2025:17:26:32 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:26:32.637Z] INFO: Получение данных пользователя: id=undefined
+::1 - - [11/May/2025:17:26:32 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:26:32.642Z] WARN: Пользователь не найден: id=undefined
+::1 - - [11/May/2025:17:26:32 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:26:32.647Z] INFO: Получение данных пользователя: id=undefined
+[2025-05-11T17:26:32.648Z] WARN: Пользователь не найден: id=undefined
+::1 - - [11/May/2025:17:26:32 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:28:22 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:28:22 +0000] "OPTIONS /api/users/get/undefined HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:28:22.400Z] INFO: Получение данных пользователя: id=undefined
+[2025-05-11T17:28:22.402Z] WARN: Пользователь не найден: id=undefined
+::1 - - [11/May/2025:17:28:22 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:28:22.404Z] INFO: Получение данных пользователя: id=undefined
+[2025-05-11T17:28:22.405Z] WARN: Пользователь не найден: id=undefined
+::1 - - [11/May/2025:17:28:22 +0000] "GET /api/users/get/undefined HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:28:34 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:28:34 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:28:34.915Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:28:34.916Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:28:34 +0000] "GET /api/users/get/1 HTTP/1.1" 200 235 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:28:34.917Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:28:34.918Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:28:34 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:28:43 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:28:43 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:28:43.565Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:28:43.566Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:28:43 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:28:43.567Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:28:43.568Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:28:43 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:28:48.546Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:28:48.546Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:28:48 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:28:48.548Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:28:48.549Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:28:48 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:29:36 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:29:36.062Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:29:36.063Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:29:36 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:30:19 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:30:19 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:30:19.999Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:30:20.000Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:30:20 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:30:20.003Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:30:20.004Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:30:20 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:30:24.082Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:30:24.083Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:30:24 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:30:24.085Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:30:24.086Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:30:24 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:31:37 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:31:37 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:31:37.138Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:31:37.139Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:31:37 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:31:37.140Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:31:37.141Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:31:37 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:31:46 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [11/May/2025:17:31:46 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:31:46.950Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:31:46.950Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:31:46 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-11T17:31:46.952Z] INFO: Получение данных пользователя: id=1
+[2025-05-11T17:31:46.954Z] INFO: Данные получены для пользователя: id=1
+::1 - - [11/May/2025:17:31:46 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:17:48:24 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T17:48:24.930Z] INFO: Получение данных пользователя: id=1
+::1 - - [14/May/2025:17:48:24 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T17:48:24.974Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:17:48:24 +0000] "GET /api/users/get/1 HTTP/1.1" 200 235 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T17:48:24.977Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T17:48:24.978Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:17:48:24 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:17:49:21 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:17:49:21 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T17:49:21.459Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T17:49:21.459Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:17:49:21 +0000] "GET /api/users/get/2 HTTP/1.1" 200 237 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T17:49:21.461Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T17:49:21.461Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:17:49:21 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:17:53:59 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:17:53:59 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T17:53:59.894Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T17:53:59.896Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:17:53:59 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T17:53:59.898Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T17:53:59.898Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:17:53:59 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:17:55:51 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:17:55:51 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T17:55:51.082Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T17:55:51.083Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:17:55:51 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T17:55:51.084Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T17:55:51.085Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:17:55:51 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:17:56:26 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:17:56:26 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T17:56:26.475Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T17:56:26.476Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:17:56:26 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T17:56:26.478Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T17:56:26.479Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:17:56:26 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:17:56:36 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:17:56:36 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T17:56:36.110Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T17:56:36.111Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:17:56:36 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T17:56:36.113Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T17:56:36.114Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:17:56:36 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:11:58 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:11:58.566Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:11:58.567Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:11:58 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:11:58.568Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:11:58.569Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:11:58 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:12:06 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:12:06 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:12:06.845Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:12:06.846Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:12:06 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:12:06.848Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:12:06.849Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:12:06 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:12:16 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:12:16 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:12:16.607Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:12:16.607Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:12:16 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:12:16.609Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:12:16.609Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:12:16 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:13:37 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:13:37 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:13:37.765Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:13:37.765Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:13:37 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:13:37.767Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:13:37.768Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:13:37 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:14:13 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:14:13 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:14:13.222Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:14:13.223Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:14:13 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:14:13.224Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:14:13.225Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:14:13 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:15:00 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:15:00 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:00.239Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:15:00.240Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:15:00 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:00.242Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:15:00.242Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:15:00 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:15:04 +0000] "OPTIONS /api/users/get/11 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:15:04 +0000] "OPTIONS /api/users/get/11 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:04.117Z] INFO: Получение данных пользователя: id=11
+[2025-05-14T18:15:04.118Z] WARN: Пользователь не найден: id=11
+::1 - - [14/May/2025:18:15:04 +0000] "GET /api/users/get/11 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:04.120Z] INFO: Получение данных пользователя: id=11
+[2025-05-14T18:15:04.121Z] WARN: Пользователь не найден: id=11
+::1 - - [14/May/2025:18:15:04 +0000] "GET /api/users/get/11 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:15:08 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:08.458Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:15:08.459Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:15:08 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:15:09 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:09.693Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:15:09.694Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:15:09 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:10.603Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:15:10.604Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:15:10 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:11.096Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:15:11.096Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:15:11 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:15:11 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:11.508Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:15:11.508Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:15:11 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:12.515Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:15:12.515Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:15:12 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:13.007Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:15:13.008Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:15:13 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:13.452Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:15:13.452Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:15:13 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:15:13 +0000] "OPTIONS /api/users/get/3 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:13.980Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:15:13.981Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:15:13 +0000] "GET /api/users/get/3 HTTP/1.1" 200 237 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:15:14 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:14.405Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:15:14.405Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:15:14 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:15:14 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:14.832Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:15:14.835Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:15:14 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:15.316Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:15:15.317Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:15:15 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:15.856Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:15:15.856Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:15:15 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:16.437Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:15:16.438Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:15:16 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:17.065Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:15:17.066Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:15:17 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:15:19 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:19.636Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:15:19.636Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:15:19 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:15:22 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:22.290Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:15:22.291Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:15:22 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:15:24 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:24.786Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:15:24.787Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:15:24 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:15:49 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:15:49 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:49.433Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:15:49.434Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:15:49 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:15:49.435Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:15:49.436Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:15:49 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:16:23 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:16:23.535Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:16:23.536Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:16:23 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:16:23.537Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:16:23.537Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:16:23 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:17:24 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:17:24 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:17:24.785Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:17:24.786Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:17:24 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:17:24.787Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:17:24.788Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:17:24 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:18:16 +0000] "OPTIONS /api/users/get/3 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:18:16.074Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:18:16.075Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:18:16 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:18:18 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:18:18.401Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:18:18.402Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:18:18 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:18:23 +0000] "OPTIONS /api/users/get/10 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:18:23 +0000] "OPTIONS /api/users/get/10 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:18:23.698Z] INFO: Получение данных пользователя: id=10
+[2025-05-14T18:18:23.699Z] WARN: Пользователь не найден: id=10
+::1 - - [14/May/2025:18:18:23 +0000] "GET /api/users/get/10 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:18:23.700Z] INFO: Получение данных пользователя: id=10
+[2025-05-14T18:18:23.701Z] WARN: Пользователь не найден: id=10
+::1 - - [14/May/2025:18:18:23 +0000] "GET /api/users/get/10 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:06 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:06 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:06.434Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:22:06.435Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:22:06 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:06.437Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:22:06.437Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:22:06 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:08 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:08.443Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:22:08.445Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:22:08 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:09 +0000] "OPTIONS /api/users/get/3 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:09.203Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:22:09.203Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:22:09 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:10.252Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:22:10.253Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:22:10 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:11.415Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:22:11.416Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:22:11 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:12.098Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:22:12.099Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:22:12 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:12.475Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:22:12.475Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:22:12 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:12.874Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:22:12.876Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:22:12 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:13.201Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:22:13.201Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:22:13 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:16 +0000] "OPTIONS /api/users/get/3 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:16 +0000] "OPTIONS /api/users/get/3 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:16.824Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:22:16.825Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:22:16 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:16.825Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:22:16.826Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:22:16 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:25 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:25.303Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:22:25.304Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:22:25 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:25 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:25.949Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:22:25.950Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:22:25 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:26 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:26.418Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:22:26.419Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:22:26 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:26 +0000] "OPTIONS /api/users/get/3 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:26.795Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:22:26.796Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:22:26 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:27.179Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:22:27.180Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:22:27 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:27.583Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:22:27.585Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:22:27 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:28.170Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:22:28.170Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:22:28 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:28.506Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:22:28.506Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:22:28 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:28.950Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:22:28.951Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:22:28 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:29.303Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:22:29.304Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:22:29 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:31.174Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:22:31.175Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:22:31 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:31 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:31.674Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:22:31.674Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:22:31 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:32 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:32.098Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:22:32.099Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:22:32 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:32 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:32.593Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:22:32.593Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:22:32 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:33 +0000] "OPTIONS /api/users/get/3 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:33.218Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:22:33.219Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:22:33 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:33.713Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:22:33.714Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:22:33 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:34.365Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:22:34.365Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:22:34 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:34.914Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:22:34.914Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:22:34 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:43 +0000] "OPTIONS /api/users/get/3 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:43.563Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:22:43.563Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:22:43 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:45 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:45.840Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:22:45.841Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:22:45 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:46 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:46.898Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:22:46.899Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:22:46 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:48.088Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:22:48.089Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:22:48 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:48 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:48.684Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:22:48.685Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:22:48 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:49 +0000] "OPTIONS /api/users/get/3 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:49.155Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:22:49.156Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:22:49 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:49.584Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:22:49.585Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:22:49 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:50.504Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:22:50.504Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:22:50 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:51.081Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:22:51.082Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:22:51 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:51.990Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:22:51.991Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:22:51 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:53.293Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:22:53.293Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:22:53 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:53.986Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:22:53.986Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:22:53 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:54 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:54.702Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:22:54.703Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:22:54 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:22:59 +0000] "OPTIONS /api/users/get/3 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:22:59.778Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:22:59.779Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:22:59 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:23:00 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:23:00.858Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:23:00.858Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:23:00 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:23:01.854Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:23:01.855Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:23:01 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:23:02.367Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:23:02.368Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:23:02 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:23:02.831Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:23:02.832Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:23:02 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:23:03.262Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:23:03.262Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:23:03 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:24:02 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:24:02.221Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:24:02.222Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:24:02 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:24:05 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:24:05.758Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:24:05.759Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:24:05 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:24:06 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:24:06.909Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:24:06.909Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:24:06 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:24:08 +0000] "OPTIONS /api/users/get/2 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:24:08.040Z] INFO: Получение данных пользователя: id=2
+[2025-05-14T18:24:08.041Z] INFO: Данные получены для пользователя: id=2
+::1 - - [14/May/2025:18:24:08 +0000] "GET /api/users/get/2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:24:08.599Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:24:08.599Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:24:08 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:24:09 +0000] "OPTIONS /api/users/get/3 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:24:09.027Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:24:09.027Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:24:09 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:24:30 +0000] "OPTIONS /api/users/get/3 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:24:30 +0000] "OPTIONS /api/users/get/3 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:24:30.230Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:24:30.231Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:24:30 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:24:30.232Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:24:30.232Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:24:30 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:24:53 +0000] "OPTIONS /api/users/get/3 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:24:53 +0000] "OPTIONS /api/users/get/3 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:24:53.236Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:24:53.236Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:24:53 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:24:53.238Z] INFO: Получение данных пользователя: id=3
+[2025-05-14T18:24:53.238Z] INFO: Данные получены для пользователя: id=3
+::1 - - [14/May/2025:18:24:53 +0000] "GET /api/users/get/3 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:25:00 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:25:00.423Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:25:00.424Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:25:00 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:25:14 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:25:14 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:25:14.658Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:25:14.665Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:25:14 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:25:14.667Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:25:14.669Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:25:14 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:25:33 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:25:33.792Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:25:33.793Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:25:33 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:27:20 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:27:20 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:27:20.815Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:27:20.816Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:27:20 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:27:20.817Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:27:20.817Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:27:20 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:28:36 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:28:36 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:28:36.514Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:28:36.515Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:28:36 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:28:36.518Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:28:36.518Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:28:36 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:29:14 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:29:14 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:29:14.677Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:29:14.678Z] INFO: Получение данных пользователя: id=4
+::1 - - [14/May/2025:18:29:14 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:29:14.678Z] WARN: Пользователь не найден: id=4
+[2025-05-14T18:29:14.679Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:29:14 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:29:21 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:29:21 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:29:21.418Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:29:21.419Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:29:21.419Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:29:21 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:29:21.420Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:29:21 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:29:28 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:29:28.242Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:29:28.243Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:29:28 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:29:37 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:29:37.685Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:29:37.686Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:29:37 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:29:37.687Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:29:37.688Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:29:37 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:30:24 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:30:24.205Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:30:24.206Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:30:24 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:30:29 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:30:29.933Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:30:29.933Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:30:29 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:30:29.935Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:30:29.936Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:30:29 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:32:01 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:32:01.517Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:32:01.518Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:32:01 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:32:01.519Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:32:01.520Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:32:01 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:32:36 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:32:36.261Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:32:36.261Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:32:36 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:32:36.263Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:32:36.264Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:32:36 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:32:53 +0000] "OPTIONS /api/users/get/4 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:32:53.384Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:32:53.385Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:32:53 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:32:53.389Z] INFO: Получение данных пользователя: id=4
+[2025-05-14T18:32:53.390Z] WARN: Пользователь не найден: id=4
+::1 - - [14/May/2025:18:32:53 +0000] "GET /api/users/get/4 HTTP/1.1" 404 26 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:33:11 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:33:11.499Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:33:11.500Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:33:11 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:33:11.503Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:33:11.504Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:33:11 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:33:42 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:33:42.924Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:33:42.925Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:33:42 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:33:42.926Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:33:42.927Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:33:42 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:33:56 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:33:56.111Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:33:56.112Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:33:56 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:33:56.113Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:33:56.114Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:33:56 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:00.339Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:00.340Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:00 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:00.750Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:00.751Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:00 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:34:01 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:01.163Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:01.164Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:01 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:02.272Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:02.274Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:02 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:02.595Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:02.595Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:02 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:03.348Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:03.349Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:03 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:04.209Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:04.209Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:04 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:04.724Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:04.725Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:04 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:34:08 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:08.555Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:08.555Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:08 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:08.940Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:08.940Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:08 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:09.355Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:09.356Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:09 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:09.810Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:09.810Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:09 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:10.965Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:10.966Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:10 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+::1 - - [14/May/2025:18:34:13 +0000] "OPTIONS /api/users/get/1 HTTP/1.1" 204 0 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:13.864Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:13.864Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:13 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:14.271Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:14.272Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:14 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+[2025-05-14T18:34:15.676Z] INFO: Получение данных пользователя: id=1
+[2025-05-14T18:34:15.677Z] INFO: Данные получены для пользователя: id=1
+::1 - - [14/May/2025:18:34:15 +0000] "GET /api/users/get/1 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
