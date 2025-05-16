@@ -116,4 +116,19 @@ module.exports = class db_manager {
             )
         });
     }
+
+    async user_remove(user_id) {
+        return new Promise((resolve, reject) => {
+            this.#db.run(
+                `DELETE FROM users WHERE user_id = ?`, [user_id],
+                (err) => {
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve(true);
+                    }
+                }
+            );
+        });
+    }
 }
